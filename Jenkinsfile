@@ -17,7 +17,7 @@ pipeline {
 			
 			stage ('service satrt'){
 				steps {
-					sh "systemctl start httpd -y"
+					sh "systemctl start httpd "
 					sh "chkconfig httpd on"
 					}
 				}
