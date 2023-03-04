@@ -11,6 +11,7 @@ pipeline {
 		
 			stage ('install'){
 				steps {
+					sh "rm -rvf *"
 					sh "yum install httpd -y"
 					}
 				}
